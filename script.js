@@ -380,6 +380,9 @@ function Person(school, name, grade, id, schedule) {
   this.grade = grade;
   this.id = id;
   this.schedule = schedule;
+  for (var i = 1; i <= 8; i++)
+    if (this.schedule[i])
+      this.schedule[i][1] = schedule[i][1].replace("&amp;", '&');
 }
 
 Person.prototype.period = function(num) {
