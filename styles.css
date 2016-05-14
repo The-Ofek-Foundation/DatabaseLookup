@@ -1,0 +1,71 @@
+html {
+  background-color: rgba(255, 192, 203, 0.6);
+}
+body {
+  text-align: center;
+  font-family: 'Helvetica';
+  font-size: 1.5em;
+}
+input[type=file] {
+  width: 15em;
+  outline: none;
+  background-color: transparent;
+  font-size: 1em;
+}
+button {
+  font-size: 1em;
+}
+#search-database input {
+  font-size: 1em;
+}
+#search-database input[type=text] {
+  outline: none;
+  border: none;
+  padding-left: 0.5em;
+  border-bottom: 0.5px solid black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+#search-database input[type=button] {
+  border: 1px solid black;
+  transition: background-color 1s;
+}
+#search-database input[type=button]:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+}
+#search-database input[type=button]:active {
+  background-color: rgba(0, 255, 0, 0.5);
+}
+#hits-table,
+#person-details-table,
+#person-schedule {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#hits-table th,
+#person-details-table th,
+#person-schedule th,
+#hits-table td,
+#person-details-table td,
+#person-schedule td {
+  border: 1px solid black;
+  padding: 0.5em;
+}
+.clickable {
+  cursor: pointer;
+  color: #0645ad;
+  transition: color 1s;
+}
+.clickable:hover {
+  color: #3366bb;
+}
+.clickable:active {
+  color: blue;
+}
+#search-method {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1em;
+  background-color: transparent;
+}
